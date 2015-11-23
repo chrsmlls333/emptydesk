@@ -1,1 +1,50 @@
-baseurl: /emptydesk.space
+
+################################################################
+# Metadata
+################################################################
+
+# Basics
+title:              Christopher Eugene Mills
+email:              christopher.mills@alumni.ubc.ca
+author:
+  name:             'Christopher Mills'
+tagline:
+description:
+url:                http://emptydesk.space/
+baseurl:            ''
+# baseurl: /emptydesk.space
+
+# Links
+github:
+  repo:             https://github.com/chrsmlls333
+  project:          https://github.com/chrsmlls333/emptydesk.space
+  username:         chrsmlls333
+
+################################################################
+# Configuration
+################################################################
+
+# Setup
+destination:        ./_site
+
+markdown:           redcarpet
+highlighter:        rouge
+sass:
+  sass_dir:         _sass
+  style:            compressed
+exclude:            [Gemfile, Gemfile.lock] #, README.md]
+include:            [.gitignore, .nojekyll]
+
+# Page Structure
+
+indexurl:           '/'
+permalink:          /:title/
+relative_permalinks: true
+# feedurl:            '/feed/'
+# paginate:           10
+# paginate_path:      feed/page:num
+
+# Google Analytics
+analytics:
+  active:           'true'
+  userID:           'UA-64212356-5'
