@@ -1,0 +1,12 @@
+
+<div class="gallery">
+  <div class="photos">
+    {% for image in page.image %} <!-- Loop through the photos from the YAML frontmatter from an empty Jekyll post , FIGURE??? -->
+
+    <div class="gallery-photo">
+      {% picture gallery {{ page.image[forloop.index0] }} alt="{{ page.image-alt[forloop.index0] }}" %}
+    </div>
+
+    {% endfor %}
+  </div>
+</div>

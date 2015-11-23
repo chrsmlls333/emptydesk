@@ -1,0 +1,20 @@
+Layout Structure
+
+compress:
+  default:
+    basic:
+      404.html
+      404-mobile.html
+      page:
+        (pages)
+      project:
+        (projects)
+    indexes:
+      index/index.html
+    p5page_splash:
+      index.html
+    p5page:
+    p5page2:
+    3jspage:
+    processing.jspage:
+    redirect:
