@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<head>
+  {% include head.html %}
+  {% include analytics.html %}
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body >
+
+  <div class="imgbox" style="background-image:url({{site.baseurl}}{{ page.image }})">
+  </div>
+  {% include title.html %}
+</body>

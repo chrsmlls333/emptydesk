@@ -1,0 +1,20 @@
+---
+layout: basic
+---
+<div class="apache">
+  <h1>{{ page.title }}</h1>
+  <table>
+    <tr><th valign="top"><img src="/assets/icons/blank.gif" alt="[ICO]"></th><th><span class=flink>Name </span></th><th><span class=flink>Last modified </span></th><th><span class=flink>Size </span></th><th><span class=flink>Description </span></th></tr>
+    <tr><th colspan="5"><hr></th></tr>
+    {% if page.backlink %}<tr><td valign="top"><img src="/assets/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="{{ page.backlink }}">Parent Directory  </a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+    {% else %}<tr><td valign="top"><img src="/assets/icons/blank.gif" alt="[ICO]"></td><td>&nbsp;</td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>{% endif %}
+    {{ content }}
+    <tr><th colspan="5"><hr></th></tr>
+  </table>
+  <footer>
+    {% if page.root %}
+    <p style="font-style:italic">Jekyll/2.4.0 Server at www.emptydesk.space Port 80<br>Domain registered to Chris Eugene Mills, 2015</p>
+    {% endif %}
+  </footer>
+  {% include title.html %}
+</div>

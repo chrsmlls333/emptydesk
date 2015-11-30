@@ -1,24 +1,12 @@
 ---
-layout:
-title: book
+layout: apache
+title: Index of /book
+
+backlink: "/"
+titlelink: "/"
 ---
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <title>Index of /book</title>
-  </head>
-  <body>
-    <h1>Index of /book</h1>
-    <table>
-      <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="">Name</a></th><th><a href="">Last modified</a></th><th><a href="">Size</a></th><th><a href="">Description</a></th></tr>
-      <tr><th colspan="5"><hr></th></tr>
-      <tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
-      <tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="jpg/">jpg</a></td><td align="right">2004-11-20 20:16  </td><td align="right">  - </td><td>&nbsp;</td></tr>
-      <tr><th colspan="5"><hr></th></tr>
-    </table>
-  </body>
-</html>
+<tr><td valign="top"><img src="/assets/icons/folder.gif" alt="[DIR]"></td><td><a href="jpgs/">jpgs  </a></td><td align="right">2015-11-30 20:16  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+{% for entry in site.filepages %}{% if entry.list-under == "book" %}
+  <tr><td valign="top"><img src="/assets/icons/{{ entry.icon }}" alt=""></td><td><a href="{{ entry.url }}">{{ entry.title }}  </a></td><td align="right">{{ entry.modified-date }}  </td><td align="right">{{ entry.filesize }}  </td><td>&nbsp;</td></tr>
+{% endif %}{% endfor %}

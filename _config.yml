@@ -38,12 +38,16 @@ include:            [.gitignore, .nojekyll]
 # Page Structure
 
 indexurl:           '/'
-permalink:          /:title/
+permalink:          /book/jpg/:title/
 relative_permalinks: true
 # feedurl:            '/feed/'
 # paginate:           10
 # paginate_path:      feed/page:num
 
+collections:
+  filepages:
+    output: true
+    permalink: /book/:path/
 # Google Analytics
 analytics:
   active:           'true'
