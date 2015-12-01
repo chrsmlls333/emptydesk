@@ -64,7 +64,7 @@ img, embed, object {
   margin: 20px;
   position: fixed;
 
-  -ms-transform: rotate(7deg) translate(50%, 225%);
+  -ms-transform: rotate(-90deg) translate(50%, 225%);
   -webkit-transform: rotate(-90deg) translate(50%, 225%);
   transform: rotate(-90deg) translate(50%, 225%);
   right: 0;
@@ -80,5 +80,11 @@ img, embed, object {
   a {
     color: white;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  #maintitle {
+    display: none;
   }
 }
