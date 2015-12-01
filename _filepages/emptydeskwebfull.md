@@ -3,7 +3,7 @@ layout: redirect
 title: emptydeskbook.zip
 
 list-under: book
-redirecturl: /fillme
+redirecturl: http://1drv.ms/1QSd1rm
 
 icon: compressed.png
 alttext: "[ZIP]"
