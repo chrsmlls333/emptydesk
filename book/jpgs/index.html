@@ -5,6 +5,6 @@ title: Index of /book/jpgs
 backlink: "/book"
 titlelink: "/"
 ---
-{% for entry in site.filepages %}{% if entry.list-under == "jpgs" %}
+{% for entry in site.filepages %}{% if entry.list-under == "jpgs" and entry.hide != 'true' %}
   <tr><td valign="top"><img src="/assets/icons/{{ entry.icon }}" alt=""></td><td><a href="{{ entry.url }}">{{ entry.title }}  </a></td><td align="right">{{ entry.modified-date }}  </td><td align="right">{{ entry.filesize }}  </td><td>&nbsp;</td></tr>
 {% endif %}{% endfor %}

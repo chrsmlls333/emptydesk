@@ -4,6 +4,7 @@ title: emptydesk.spaceCover.indd
 
 list-under: book
 redirecturl: /book/emptydesk.spaceCover.indd
+hide: 'true'
 
 icon: layout.png
 alttext: "[LAY]"
