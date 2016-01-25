@@ -7,7 +7,7 @@
 title:              emptydesk.space
 email:              christopher.mills@alumni.ubc.ca
 author:
-  name:             'Christopher Mills'
+  name:             'Chris Eugene Mills'
 tagline:
 description:
 url:                http://emptydesk.space/
@@ -40,14 +40,13 @@ include:            [.gitignore, .nojekyll]
 indexurl:           '/'
 permalink:          /book/jpg/:title/
 relative_permalinks: true
-# feedurl:            '/feed/'
-# paginate:           10
-# paginate_path:      feed/page:num
+titlelink:          '/'
 
 collections:
   filepages:
     output: true
     permalink: /book/:path/
+
 # Google Analytics
 analytics:
   active:           'true'
