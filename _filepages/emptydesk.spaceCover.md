@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: emptydesk.spaceCover.indd
+title: emptydesk.spaceCover.ver1.indd
 
 list-under: book
 redirecturl: /book/emptydesk.spaceCover.indd
