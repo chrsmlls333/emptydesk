@@ -1,9 +1,9 @@
 ---
 layout: redirect
-title: emptydeskweb.ver1.pdf
+title: emptydesk.ver1.pdf
 
 list-under: book
-redirecturl: /book/emptydeskweb.ver1.pdf
+redirecturl: /book/emptydesk.ver1.pdf
 
 icon: pdf.png
 alttext: "[PDF]"
