@@ -5,17 +5,33 @@ layout: default
 <head>
   {% include head.html %}
   {% include analytics.html %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/3.0.0/screenfull.min.js"></script>
+
   <style>
     html, body {
       width: 100%;
       height: 100%;
       margin: 0px;
       background-color: #fff;
+
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
     }
+    /*:hover {image-rendering: auto;}*/
   </style>
 </head>
 
 <body>
-  <div class="imgbox" style="background-image:url({{site.baseurl}}{{ page.image }})"></div>
+  <div id="imgbox" style="background-image:url({{site.baseurl}}{{ page.image }})"></div>
+  <script type="text/javascript">
+    $('#imgbox').click(function () {
+      if (screenfull.enabled) {
+        document.addEventListener(screenfull.raw.fullscreenerror, function (event) {
+          console.error('Failed to enable fullscreen', event);
+        });
+        screenfull.toggle();
+      }
+    });
+  </script>
   <!-- {% include title.html %} -->
 </body>
